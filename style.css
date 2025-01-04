@@ -1,35 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* The width and height you specify for each component includes the content, padding anad border unlike content-box*/
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /*makes the body flexible, automatic centering and allignments of stuff*/
+    justify-content: center; /* helps align everything in the body horizontally*/
+    align-items: center; /* helps align everything in the body vertically*/
     font-family: "Helvetica Neue", Arial, sans-serif;
     background: linear-gradient(135deg, #3f87a6, #ebf8e1);
     height: 100vh;
 }
 .todo-container {
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     width: 400px;
     padding: 20px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
+
 h1 {
     text-align: center;
     margin-bottom: 15px;
     font-weight: 300;
     color: #fff;
 }
+
 .top-section {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
+
 #new-task {
     flex: 1;
     padding: 12px;
@@ -38,6 +41,7 @@ h1 {
     outline: none;
     font-size: 16px;
 }
+
 #add-btn {
     padding: 12px 16px;
     border: none;
@@ -48,6 +52,7 @@ h1 {
     cursor: pointer;
     transition: 0.3s;
 }
+
 #add-btn:hover {
     background: #004c51;
 }
@@ -155,15 +160,21 @@ h1 {
 #clear-completed:hover {
     background: #c9785b;
 }
+
+/* pretty cool scrollbar stuff*/
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 8px; /* Narrow scrollbar */
 }
+
 ::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.2); /* Semi-transparent track */
 }
+
 ::-webkit-scrollbar-thumb {
-    background: #006d77;
+    background: #006d77; /* Custom teal thumb */
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #004c51;
+    background: #004c51; /* Darker teal on hover */
 }
+
