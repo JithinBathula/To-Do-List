@@ -24,7 +24,7 @@ searchInput.addEventListener("input", () => renderTasks())
 
 
 // adding an event listener for each of the 3 filter buttons. When any of the buttons is clicked, it removes the active class from all the buttons and adds it to the one that it is clicked to
-filterButtons.forEach(btn => {d
+filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
         filterButtons.forEach(b => b.classList.remove("active"))
         btn.classList.add("active")
